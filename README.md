@@ -95,3 +95,22 @@ Demonstrate how Python, SQL, data analytics, and interactive visualizations can 
 ## 👨‍💻 Author
 
 GitHub: [teevrawork](https://github.com/teevrawork)
+
+---
+
+## 📸 SkyPulse 2.0 Dashboard Screenshots
+
+A visual preview of the interactive airline operations dashboard.
+
+### Dashboard Preview 1
+![SkyPulse Dashboard Preview 1](screenshots/dashboard-1.png)
+
+### Dashboard Preview 2
+![SkyPulse Dashboard Preview 2](screenshots/dashboard-2.png)
+
+### Dashboard Preview 3
+![SkyPulse Dashboard Preview 3](screenshots/dashboard-3.png)
+
+### Dashboard Preview 4
+![SkyPulse Dashboard Preview 4](screenshots/dashboard-4.png)
+
