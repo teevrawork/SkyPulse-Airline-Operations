@@ -1,0 +1,8 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+README_v1_backup.md
+app_backup_*.py
+.env

@@ -1,84 +1,97 @@
-# ✈️ SkyPulse — Airline Operations Intelligence
+# ✈️ SkyPulse 2.0 — Airline Operations Intelligence
 
-### SQL Analytics Portfolio Project | MariaDB
+An interactive airline operations dashboard built with Python, Streamlit, and Plotly.
 
-SkyPulse is an airline operations analytics project built using **MariaDB and SQL**. It explores flight delays, cancellations, airline performance, airport routes, and operational efficiency using synthetic flight data.
+SkyPulse helps explore flight performance, delays, cancellations, airline rankings, and route activity through visual analytics.
 
 ## 📊 Project Overview
 
-- **Database:** MariaDB 11.8
-- **Dataset:** 1,000 synthetic flight records
-- **Tables:** airlines, airports, flights, delay_reasons
-- **Analytics:** Flight delay rates, cancellation rates, route performance, and delay reasons
+- **Dashboard:** Streamlit
+- **Programming language:** Python
+- **Data analysis:** Pandas
+- **Visualizations:** Plotly
+- **Dataset:** 5,000 synthetic flight records
+- **Airlines:** 15
+- **Cities:** 40
+- **Unique routes:** 771
 
-## 🛠️ SQL Skills Demonstrated
+## 🚀 Dashboard Features
 
-- Relational database design
-- Primary keys and foreign keys
-- INNER JOIN and multi-table JOIN
-- GROUP BY and ORDER BY
-- COUNT, SUM, AVG, and ROUND
-- CASE WHEN conditional aggregation
-- SQL views
-- Stored procedures for synthetic data generation
+- Flight operations KPI cards
+- Flight status distribution
+- Airline performance comparison
+- Daily flight operations trends
+- Most and least popular routes
+- Operations insights
+- Flight Control Tower visualization
+- Airline ranking cards
+- Delay duration distribution
+- Flight records explorer
 
-## 📈 Key Analyses
+## 🛠️ Technologies Used
 
-**1. Airline Performance**
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- MariaDB and SQL (original project)
 
-Compare airlines by total flights, delayed flights, and delay percentages.
+## 💻 Run Locally
 
-**2. Flight Delay and Cancellation KPIs**
+Clone the repository:
 
-Measure overall delay and cancellation rates.
+    git clone https://github.com/teevrawork/SkyPulse-Airline-Operations.git
 
-**3. Route Analytics**
+Enter the project folder:
 
-Identify the busiest flight routes and compare their average departure delays.
+    cd SkyPulse-Airline-Operations
 
-**4. Delay Reason Analysis**
+Install dependencies:
 
-Explore operational factors such as weather, technical issues, crew delays, and air traffic.
+    pip install -r requirements.txt
 
-## 🗂️ Database Structure
+Start the dashboard:
 
-| Table | Purpose |
-|---|---|
-| airlines | Airline information |
-| airports | Airport locations and codes |
-| flights | Flight schedules, statuses, and delays |
-| delay_reasons | Reasons for flight delays |
+    streamlit run app.py
 
-The `flights` table connects airlines and airports through foreign keys. The `delay_reasons` table connects to individual flights.
-
-## 🚀 How to Run
-
-1. Install MariaDB.
-2. Download `skypulse_database.sql`.
-3. Import the database using:
-
-```bash
-mariadb -u root -p < skypulse_database.sql
-```
-
-4. Open MariaDB and run:
-
-```sql
-USE skypulse_db;
-SELECT * FROM airline_performance;
-```
-
-Depending on your MariaDB authentication setup, the import command may need to be adjusted.
+Open the local URL displayed in your terminal.
 
 ## 📁 Project Files
 
-- `skypulse_database.sql` — Database structure, synthetic data, and SQL view
+- `app.py` — Interactive Streamlit dashboard
+- `flights_dashboard.csv` — Synthetic dashboard dataset
+- `requirements.txt` — Python dependencies
+- `.streamlit/config.toml` — Dashboard theme configuration
+- `skypulse_database.sql` — Original SkyPulse 1.0 SQL project
 - `README.md` — Project documentation
+
+## 🗄️ SkyPulse 1.0 — SQL Foundation
+
+The original project focused on relational database design and SQL analytics using MariaDB.
+
+It included 1,000 synthetic flight records and demonstrated:
+
+- Primary keys and foreign keys
+- SQL JOIN operations
+- GROUP BY and aggregation
+- Airline performance analysis
+- Delay and cancellation KPIs
+- SQL views and stored procedures
+
+The original project is preserved under the GitHub tag `v1.0`.
+
+**Note:** The SQL file belongs to the original SQL project and is separate from the SkyPulse 2.0 dashboard CSV dataset.
 
 ## ⚠️ Data Disclaimer
 
-All flight records are synthetic and intended for educational and portfolio demonstration purposes. The results do not represent actual airline performance.
+All flight records are synthetic and used for learning, analytics demonstrations, and portfolio purposes.
+
+The results do not represent actual airline operations or real airline performance.
 
 ## 🎯 Project Objective
 
-Demonstrate practical SQL skills by transforming relational flight data into useful operational KPIs and business insights.
+Demonstrate how Python, SQL, data analytics, and interactive visualizations can turn operational datasets into actionable business intelligence.
+
+## 👨‍💻 Author
+
+GitHub: [teevrawork](https://github.com/teevrawork)
